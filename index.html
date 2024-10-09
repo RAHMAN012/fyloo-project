@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<!-- <body class="container mx-auto ">
+  <div class="flex justify-between items-center flex-col">
+    <h2 class="text-black-400
+     bg-stone-400 text-[1rem]
+      border-[2px]
+       border-[hsl(228,45%,44%)]
+      shadow-2xl
+       mt-8 
+        mb-8 
+        pl-[3rem]
+         pb-[5rem]
+          hover:text-[violet]
+          flex-grow
+          hidden
+          lg:block
+
+          "> Today is monday</h2>
+ <p class="bg-green-500 border-red-500">the quick brown fox</p>
+  </div> -->
+ 
+ <!-- <p > -->
+  <!-- break points -->
+  <!-- sm	640px	@media (min-width: 640px) { ... }
+  md	768px	@media (min-width: 768px) { ... }
+  lg	1024px	@media (min-width: 1024px) { ... }
+  xl	1280px	@media (min-width: 1280px) { ... }
+  2xl	1536px	@media (min-width: 1536px) { ... } -->
+  <!-- Features
+   
+  Team
+  Sign In
+
+  All your files in one secure location, accessible anywhere.
+
+  Fylo stores your most important files in one secure location. 
+  Access them wherever you need, share and collaborate with friends, 
+  family, and co-workers.
+
+  Get Started
+
+  Stay productive, wherever you are
+
+  Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+
+  See how Fylo works
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy -->
+  <!-- py or my is for top and bottom
+   while px or mx is for left and right -->
+<body>
+   <header class="max-w-[1280px] mx-auto flex justify-between items-center py-[1.5rem] px-[1.5rem] md:px-[3rem]">
+    <img src="/fylo-landing-page-with-two-column-layout-master/images/logo.svg" alt="page -logo" class="w-[7rem]">
+    <nav class="hidden md:block">
+      <a href="#" class="ml-[1.5rem] md:ml-[2rem] md:pb-[1rem]  ">Features </a>
+      <a href="#" class="ml-[1rem]  md:ml-[2rem]  md:pb-[1rem] ">Team </a>
+      <a href="#" class="ml-[1rem] md:ml-[2rem]  md:pb-[1rem] ">Sign In</a>
+    </nav>
+    <div class="md:hidden">
+      <i class="ri-menu-line text-[2rem]"></i>
+    </div>
+   </header>
+   <!-- hero section -->
+    <section class="max-w-[1280px] mx-auto  py-6  px-[2rem] md:pl-[3rem]  pb-[3rem] items-center md:flex  flex-row-reverse md:justify-between">
+        <div >
+        <img src="/fylo-landing-page-with-two-column-layout-master/images/illustration-1.svg" alt="" 
+        class="w-[300px] md:w-[310px] lg:w-[600px]">
+        </div> 
+      <div class="w-[100%] md:w-[50%] text-center  py-[1.5rem] md:text-left relative  ">        
+         <h1  class="text-[2rem] mb-[1.5rem]  md:text-[1.5rem] lg:[2.5rem] font-bold">All your files in one secure location, accessible anywhere. </h1>
+         <p class="text-[1.2rem] md:text-[.75rem] lg:text-[1.2rem]"> Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.</p>
+          <div class="md:flex">
+            <input type="email" class="border-[2px] border-solid border-[#333] mt-[1.5rem] py-[.75rem] md:py-[0.5rem] pl-[2rem] w-[100%] md:w-[50%]  md:mr-[1rem]" placeholder="Enter your email..."  >  
+            <a href="#" class="bg-[#3065f8] text-[#fff] mt-[1.5rem] px-[2rem] md:-[px-1rem] py-[1rem] block w-[100%] hover:bg-[#fff] hover:text-[#3065f8] hover:border-[#3065f8] hover:border-[2px] transition md:w-[45%] lg:w-[30%]">Get Started</a>
+          </div>                   
+      </div>                
+    </section>
+    <!-- productive section -->
+     <section class="max-w-[1280px] mx-auto py-6  px-[2rem] pt-[3rem] bg-[#f6f6fe] bg-cover md:flex flex-row-reverse justify-between md:w-[100%] md:pl-[4rem]  md:pb-[5rem] md:flex-col md:justify-center md:items-center lg:flex-row-reverse">    
+      <div class="flex items-center">
+        <img src="/fylo-landing-page-with-two-column-layout-master/images/illustration-2.svg" alt="" class="mb-[2rem] w-[100%] md:w-[70%] lg:w-[100%]  md:mx-[auto] ">
+      </div>  
+      <div class="mx-[auto]">
+        <div class="mt-[3rem] md:w-[100%] ">
+          <h1 class="text-[2rem]  text-center font-bold mb-[2rem] md:text-left md:text-[2rem]">Stay productive, wherever you are.</h1>
+          <p class="font-thin mb-[1.5rem] text-[#BFBFBF] text-[1.2rem] md:text-[1rem] md:w-[70%]"> Never let location be an issue when accessing your files. Fylo has you 
+            covered for all of your file storage needs.</p>
+          <p class="mb-[1rem] text-[#BFBFBF] text-[1.2rem] md:text-[1rem] md:w-[70%]">Securely share files and folders with friends, family and colleagues for 
+            live collaboration. No email attachments required!
+          </p>
+          <a href="#" class="text-[#3c9f8f] works-link pb-[1rem] md:text-[1.2rem] ">See how fylo works <i class="ri-arrow-right-circle-fill work-icon"></i></a>
+        </div>       
+        <div class="cards bg-[#fff] mt-[3rem] px-[1rem] py-[1rem] md:w-[60%]">
+          <!-- <i class="ri-double-quotes-l"></i> -->
+           <img src="/fylo-landing-page-with-two-column-layout-master/images/icon-quotes.svg" alt="">
+          <p class="mt-[1.5rem]"> Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="flex mt-[2.2rem]">
+              <img src="/fylo-landing-page-with-two-column-layout-master/images/avatar-testimonial.jpg" alt="" class="mr-[1rem] w-[50px] h-[50px] rounded-full">
+              <div  class="">
+                <h3>Adepoju Taiwo</h3>
+                <p>Founder and CEO, huddle</p>
+              </div>
+            </div>
+        </div>
+      </div>     
+     </section>
+     <!-- access section -->
+     <section class="access max-w-[1280px] mx-auto py-[2rem] bg-[#585989] text-[#fff] px-[1.5rem] md:flex justify-between md:px-[5rem] md:items-center md:pt-[4rem]">
+        <div class="md:w-[50%]">
+          <h1 class="text-[1.5rem] md:text-[2rem] text-center mb-[1.5rem] md:text-left lg:text-[2.5rem] md:font-bold">Get early access today</h1>
+          <p class="text-center mb-[1.4rem] md:text-left md:text-[1rem] lg:text-[1.4rem]">It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.</p>
+        </div>
+        <div class="flex flex-col ">
+          <input type="email" placeholder="enter your email..." class="mb-[1.2rem] py-[.75rem] text-center md:w-[18rem]">
+          <button class="bg-[#3065f8] py-[.75rem] cursor-pointer md:w-[14rem]">Get started for Free</button>
+        </div>
+     </section>
+</body>
+  <footer class=" max-w-[1280px] mx-auto bg-[#070439] text-[#fff] p-[2rem] md:py-[2.5rem]">
+    <div class="md:flex justify-between items-center ">
+    <div class="mb-[2rem]">
+      <img src="/fylo-landing-page-with-two-column-layout-master/images/fylo footer logo.PNG" alt="" class="mb-[2rem]">
+      <p class="text-[1.2rem] md:mb-[1rem]"><i class="ri-phone-line"></i>Phone: +234 813 295 3677</p>
+      <p class="text-[1.2rem]" ><i class="ri-mail-line bg"></i> rahmanadepoju03@gmail.com</p>
+    </div>
+    <div class="flex flex-col mb-[2rem] text-[1.2rem] links md:mt-[3.5rem] md:text-[1.5rem]">
+      <a href="" class="mb-[.75rem] block w-[5rem] pb-[.75rem] md:w-[7rem]">About Us</a>
+      <a href="" class="mb-[.75rem] block w-[5rem] pb-[.75rem]"">Jobs</a>
+      <a href="" class="mb-[.75rem] block w-[5rem] pb-[.75rem]">Press</a>
+      <a href="" class="mb-[.75rem] block w-[5rem] pb-[.75rem]">Blog</a>
+    </div>
+    <div class="flex flex-col mb-[2rem] text-[1.2rem] links md:text-[1.5rem]">
+      <a href="" class="mb-[.75rem] block w-[6rem] pb-[.75rem] md:w-[7.5rem]">Contact Us</a>
+      <a href="" class="mb-[.75rem] block w-[5rem] pb-[.75rem]">Terms </a>
+      <a href="" class="mb-[.75rem] block w-[5rem] pb-[.75rem]">Privacy</a>
+    </div>
+   
+    <div class="flex items-center justify-center ">
+      <a href=""><i class="ri-facebook-line p-[.75rem] border  rounded-full ml-[1rem]"></i></a>
+      <a href=""><i class="ri-twitter-x-line p-[.75rem] border  rounded-full ml-[1rem]"></i></a>
+      <a href=""><i class="ri-instagram-line p-[.75rem] border  rounded-full ml-[1rem]"></i></a>
+    </div>
+    </div>
+     <p class="attribution text-center mt-[2.5rem] ">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Adepoju Taiwo</a>.
+    </p> 
+    <!--  -->
+    
+  </footer>
+</body>
+</html>

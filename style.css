@@ -1,0 +1,74 @@
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+}
+
+a{
+    /* color: var(--Bright-Blue); */
+}
+.bg-cover{
+    background-image: url(/fylo-landing-page-with-two-column-layout-master/images/bg-curve-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width:768px) {
+    .bg-cover{
+        background-image: url(/fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg);
+    }
+}
+.works-link{
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+.work-icon{
+    transition: all 400ms ease;
+}
+.work-icon:hover{
+    margin-left: .2rem;
+}
+.cards{
+    box-shadow: 0px 1px 97px -28px rgba(0,0,0,0.42);
+-webkit-box-shadow: 0px 1px 97px -28px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 1px 97px -28px rgba(0,0,0,0.42);
+}
+/* link animation */
+nav a{
+    position: relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    left: 0;
+    bottom: 0;
+    background-color:hsl(243, 87%, 12%); /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Animation for the underline */
+  }
+  
+  nav a:hover::after {
+    width: 100%; /* Full width on hover */
+  }
+
+
+.links a{
+    position: relative;
+}
+.links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    left: 0;
+    bottom: 0;
+    background-color:#fff; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Animation for the underline */
+  }
+  
+  .links a:hover::after {
+    width: 100%; /* Full width on hover */
+  }
